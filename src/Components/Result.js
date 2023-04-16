@@ -1,5 +1,5 @@
 import React from 'react'
-// import Crad from './Crad'
+import Crad from './Crad'
 
 const Result = ({Details}) => {
   // console.log(Details);
