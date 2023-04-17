@@ -32,7 +32,7 @@ function App() {
     fetchDetails();
   }, [])
 
-  
+  let x=Data;
   const [SearchResult, setSearchResult] = useState([]);
   const [Search, setSearch] = useState("")
   // setSearchResult(Data);
@@ -71,10 +71,10 @@ function App() {
            <div>
                <Header  temp={fun} />
               {
-                (SearchResult.length!==0) ?
-               <Result Details={SearchResult} />:
+                (Search.length  <1) ?
+               <Result Details={x} />:
 
-              <Result Details={Data} />
+              <Result Details={SearchResult} />
               }
            </div>
            );

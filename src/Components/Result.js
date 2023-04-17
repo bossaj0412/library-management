@@ -1,5 +1,5 @@
 import React from 'react'
-import Crad from './Crad'
+// import Crad from './Crad'
 
 const Result = ({Details}) => {
   // console.log(Details);
@@ -8,8 +8,9 @@ const Result = ({Details}) => {
              {
           Details.map((e,ind)=>{
             return (
-              <div  className=' bg-gray-200  text-center p-3 mx-3 basis-[100%] md:basis-[48%] my-3' >
+              <div  className=' bg-gray-200  text-center p-3 mx-3 basis-[100%] md:basis-[48%] my-3' key={ind} >
                   <p>{`${e.title}`}</p>
+                  {/* {console.log(ind)} */}
               </div>
             )
           })

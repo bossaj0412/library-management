@@ -4,7 +4,7 @@ const Header = ({temp}) => {
   return (
     <div className=" text-center m-4">
 
-        <input type='text' placeholder='enter book name'
+        <input type='text' placeholder='Enter the book name'
          className=' outline-0 hover: border-b-4 text-center ' 
          onChange={(e)=>temp(e.target.value)}/>
 
